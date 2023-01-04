@@ -6,7 +6,328 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dashboard</title>
         <link rel="stylesheet" href="styles.css" />
+        <!-- https://material.io/resources/icons/?style=baseline -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <!-- https://material.io/resources/icons/?style=outline -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+            rel="stylesheet"
+        />
+
+        <!-- https://material.io/resources/icons/?style=round -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+            rel="stylesheet"
+        />
+
+        <!-- https://material.io/resources/icons/?style=sharp -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+
+        <!-- https://material.io/resources/icons/?style=twotone -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+            rel="stylesheet"
+        />
         <script src="index.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <div id="sidebar">
+            <div id="sidebar-header" class="sidebar-button">
+                <span class="material-icons md-light md-36">dashboard</span>
+                <p>Dashboard</p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div id="home" class="sidebar-button">
+                <span class="material-icons md-light">home</span>
+                <p>Home</p>
+            </div>
+            <div id="profile" class="sidebar-button">
+                <span class="material-icons md-light">person</span>
+                <p>Profile</p>
+            </div>
+            <div id="messages" class="sidebar-button">
+                <span class="material-icons md-light">message</span>
+                <p>Messages</p>
+            </div>
+            <div id="history" class="sidebar-button">
+                <span class="material-icons md-light">history</span>
+                <p>History</p>
+            </div>
+            <div id="tasks" class="sidebar-button">
+                <span class="material-icons md-light">task</span>
+                <p>Tasks</p>
+            </div>
+            <div id="communities" class="sidebar-button">
+                <span class="material-icons md-light">people</span>
+                <p>Communities</p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div id="settings" class="sidebar-button">
+                <span class="material-icons md-light">settings</span>
+                <p>Settings</p>
+            </div>
+            <div id="support" class="sidebar-button">
+                <span class="material-icons md-light">support</span>
+                <p>Support</p>
+            </div>
+            <div id="privacy" class="sidebar-button">
+                <span class="material-icons md-light">shield</span>
+                <p>Privacy</p>
+            </div>
+        </div>
+        <div id="dash">
+            <div id="header">
+                <div id="searchbar">
+                    <span class="material-icons md-dark">search</span>
+                    <input type="text" />
+                </div>
+                <div id="account-info">
+                    <span
+                        id="notifications"
+                        class="material-icons-outlined md-dark"
+                        >notifications_active</span
+                    >
+                    <img
+                        class="small-img"
+                        src="https://img.freepik.com/free-vector/cute-penguin-with-fish-cartoon-vector-illustration-animal-wildlife-concept-isolated-vector-flat-cartoon-style_138676-1932.jpg?w=1380&t=st=1672721233~exp=1672721833~hmac=b2a311e8c83b88fe40a6218ea7dca673d977616d35757f1caca89a3e15c75d86"
+                        alt="user-profile-pic"
+                    />
+                    <p id="profile-name">Nicholas Downey</p>
+                </div>
+                <div id="greeting">
+                    <img
+                        class="med-img"
+                        src="https://img.freepik.com/free-vector/cute-penguin-with-fish-cartoon-vector-illustration-animal-wildlife-concept-isolated-vector-flat-cartoon-style_138676-1932.jpg?w=1380&t=st=1672721233~exp=1672721833~hmac=b2a311e8c83b88fe40a6218ea7dca673d977616d35757f1caca89a3e15c75d86"
+                        alt="user-profile-pic"
+                    />
+                    <p id="greeting">
+                        Hi there,<br /><span
+                            >Nicholas Downey (@TangoBytes)</span
+                        >
+                    </p>
+                </div>
+                <div id="buttons">
+                    <button id="new">New</button>
+                    <button id="upload">Upload</button>
+                    <button id="share">Share</button>
+                </div>
+            </div>
+            <div id="content">
+                <div id="projects">
+                    <h3>Your Projects</h3>
+                    <div id="project-cards">
+                        <div class="project-card">
+                            <h4 class="card-header">Super Cool Project</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                        <div class="project-card">
+                            <h4 class="card-header">Less Cool Project</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                        <div class="project-card">
+                            <h4 class="card-header">Impossible App</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                        <div class="project-card">
+                            <h4 class="card-header">Easy Peasy App</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                        <div class="project-card">
+                            <h4 class="card-header">Ad Blocker</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                        <div class="project-card">
+                            <h4 class="card-header">Money Maker</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="card-buttons">
+                                <span class="material-icons-outlined">
+                                    grade
+                                </span>
+                                <span class="material-icons-outlined">
+                                    preview
+                                </span>
+                                <span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="side-panel">
+                    <h3>Announcements</h3>
+                    <div id="announements">
+                        <div id="announcements-card">
+                            <div class="announcement">
+                                <h5 class="card-header">Site Maintenance</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="announcement">
+                                <h5 class="card-header">Community Share Day</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="announcement">
+                                <h5 class="card-header">
+                                    Updated Privacy Policy
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trending">
+                        <h3>Trending</h3>
+                        <div id="trending-card">
+                            <div class="trending">
+                                <img
+                                    class="small-img"
+                                    src="https://img.freepik.com/free-vector/cute-giraffe-sleeping-moon-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-5248.jpg?w=740&t=st=1672858105~exp=1672858705~hmac=2593a1766a348c1a729d93de4d6f4bd8451818658ea4d577aa3d2fae2fdcb2aa"
+                                    alt="profile-pic"
+                                />
+                                <div>
+                                    <h6 class="card-header">@tegan</h6>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <img
+                                    class="small-img"
+                                    src="https://img.freepik.com/free-vector/cute-cool-baby-holding-teddy-bear-doll-cartoon-vector-icon-illustration-people-holiday-isolated_138676-5356.jpg?w=900&t=st=1672858133~exp=1672858733~hmac=79b49a439d86b6cef518be75930868073e7d81cd2396d354f6bf11a11646adca"
+                                    alt="profile-pic"
+                                />
+                                <div>
+                                    <h6 class="card-header">@morgan</h6>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <img
+                                    class="small-img"
+                                    src="https://img.freepik.com/free-vector/cute-cat-holding-fish-cartoon-icon-illustration-animal-food-icon-concept-isolated-flat-cartoon-style_138676-2171.jpg?w=900&t=st=1672858134~exp=1672858734~hmac=53efeffe0ca1079db568f791acf4f025611266f46e213cf8b2bc917cefef0087"
+                                    alt="profile-pic"
+                                />
+                                <div>
+                                    <h6 class="card-header">@kendall</h6>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <img
+                                    class="small-img"
+                                    src="https://img.freepik.com/free-vector/cute-unicorn-floating-with-balloon-cartoon-vector-icon-illustration_138676-2229.jpg?w=900&t=st=1672858135~exp=1672858735~hmac=5e4f8c9ef1996dfce06c2e98494f2a92685700fed1b15c640d70e204af71acf2"
+                                    alt="profile-pic"
+                                />
+                                <div>
+                                    <h6 class="card-header">@alex</h6>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
